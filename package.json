@@ -45,6 +45,7 @@
   },
   "scripts": {
     "prepublish": "npm run build:module",
+    "preinstall": "npm run prepublish",
     "lint": "eslint ./src/*.jsx ./example/src",
     "pretest": "npm run lint",
     "test": "npm run unit-test",
